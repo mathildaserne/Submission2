@@ -7,33 +7,29 @@ namespace Uppgift2komplitering
 {
     class Operator : Program
     {
-        /* public/private static? return?  MetodNamnet(data in) 
-           {
-              Metod kroppen!
-           }
-        */
-
-          private int Evaluate(int a, string op, int b, string op2, int c) 
+          public static int Evaluate(int a, string op, int b, string op2, int c)
         {
             switch (op)
             {
-                case "+":
+                default:
                     switch (op2)
                     {
                         case "+":
                             return a + b + c;
                             
+                            
                         case "-":
                             return a + b - c;
+                            
                             
                         case "*":
                             return a + b * c;
                             
-                        case "/":
-                            return a + b / c;
-                            
+
                         default:
+                            return a + b + c;
                             break;
+                       
                     }
                     break;
                 case "-":
@@ -42,16 +38,17 @@ namespace Uppgift2komplitering
                         case "+":
                             return a - b + c;
                             
+                            
                         case "-":
                             return a - b - c;
+                            
                             
                         case "*":
                             return a - b * c;
                             
-                        case "/":
-                            return a - b / c;
-                            
+
                         default:
+                            return a - b + c;
                             break;
                     }
                     break;
@@ -61,16 +58,17 @@ namespace Uppgift2komplitering
                         case "+":
                             return a * b + c;
                             
+                            
                         case "-":
                             return a * b - c;
+                            
                             
                         case "*":
                             return a * b * c;
                             
-                        case "/":
-                            return a * b / c;
-                            
+
                         default:
+                            return a * b + c;
                             break;
                     }
                     break;
@@ -80,19 +78,21 @@ namespace Uppgift2komplitering
                         case "+":
                             return a / b + c;
                             
+                            
                         case "-":
                             return a / b - c;
+                            
                             
                         case "*":
                             return a / b * c;
                             
-                        case "/":
-                            return a / b / c;
-                            
+
                         default:
+                            return a / b + c;
                             break;
                     }
                     break;
+                   
             }
         }
     }
